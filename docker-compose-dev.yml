@@ -18,6 +18,7 @@ services:
     extra_hosts:
       # For Linux users only till docker.host.internal is not available by default
       # https://github.com/docker/libnetwork/pull/2348/files
+      - "dashashkorubska-232.local www.dashashkorubska-232.local dasha-shkorubska.local www.dasha-shkorubska.local:127.0.0.1"
       - "host.docker.internal:172.17.0.1"
     environment:
       # Must be set to some of the domains for xdebug to work. Should have server configured in
